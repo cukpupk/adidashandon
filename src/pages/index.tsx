@@ -65,7 +65,7 @@ const RattingViews = () => {
         // @ts-ignore
         setData([...data.concat(moreData)])
     }
-    const handleFilterChange = (e) => {
+    const handleFilterChange = () => {
 
     }
     return (

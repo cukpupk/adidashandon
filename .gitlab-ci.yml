@@ -1,0 +1,88 @@
+stages:
+    - prepare
+    - build
+    - deploy
+
+cache:
+    key: "$CI_JOB_NAME-$CI_COMMIT_REF_SLUG"
+
+prepare_job:
+    stage: prepare
+    script:
+        - echo "BUILD_VERSION=$(cat VERSION.txt)" >> build.env
+    artifacts:
+        reports:
+            dotenv: build.env
+    only:
+        - master
+        - /^release/.*$/
+        - /^staging/.*$/
+        - /^\d+(\.\d+)+$/
+    tags:
+        ['linux-shell-us']
+
+build_dev:
+    stage: build
+    needs:
+    - job: prepare_job
+      artifacts: true
+    script:
+        - echo "Building docker image dev-$BUILD_VERSION"
+        - docker build --rm -t "adidas-handon:dev-$BUILD_VERSION" . --build-arg env=dev
+        - echo "Building done!"
+    only:
+        - master
+    tags:
+        ['linux-shell-us']
+
+build_prod:
+    stage: build
+    needs:
+    - job: prepare_job
+      artifacts: true
+    script:
+        - echo "Building docker image prod-$BUILD_VERSION"
+        - docker build --rm -t "adidas-handon:prod-$BUILD_VERSION" . --build-arg env=prod
+        - echo "Building done!"
+    only:
+        - /^\d+(\.\d+)+$/
+    except:
+        - branches
+    tags:
+        ['linux-shell-us']
+
+deploy_dev:
+    stage: deploy
+    needs:
+    - job: prepare_job
+      artifacts: true
+    - job: build_dev
+      artifacts: true
+    script:
+        - echo "Push to image registry dev-$BUILD_VERSION"
+        - docker info
+        - docker login --username=$REGISTRY_USER --password=$REGISTRY_PW ccr.ccs.tencentyun.com
+        - docker push adidas-handon:dev-$BUILD_VERSION
+    only:
+        - master
+    tags:
+        ['linux-shell-us']
+
+deploy_prod:
+    stage: deploy
+    needs:
+    - job: prepare_job
+      artifacts: true
+    - job: build_prod
+      artifacts: true
+    script:
+        - echo "Push to image registry prod-$BUILD_VERSION"
+        - docker info
+        - docker login --username=$REGISTRY_USER --password=$REGISTRY_PW ccr.ccs.tencentyun.com
+        - docker push adidas-handon:prod-$BUILD_VERSION
+    only:
+        - /^\d+(\.\d+)+$/
+    except:
+        - branches
+    tags:
+        ['linux-shell-us']
