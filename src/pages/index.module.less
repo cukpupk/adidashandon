@@ -1,0 +1,162 @@
+.rattingContainer {
+  width: 60%;
+  height: 40%;
+  .rattingContainerTitle {
+    font-family: "AdineuePRO",Helvetica,Arial,sans-serif;
+    font-size: 30px;
+    line-height: 28px;
+  }
+  .ratting {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .ratings {
+      width: calc((1 / 3) * 100% - 20px);
+      .rattingHeader {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        .rattingHeaderBody {
+          margin-bottom: 0 !important;
+        }
+      }
+      .starRating {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #2ada71;
+        .starRatingContainer {
+          display: flex;
+          align-items: center;
+        }
+      }
+      .subRating {
+        margin-top: 15px;
+        .primarySubRatings {
+          display: flex;
+          .primarySubRatingsLeft {
+            flex: 1;
+            text-align: center;
+            margin-bottom: 0 !important;
+            font-size: 14px;
+            line-height: 20px;
+            .averageRating {
+              display: flex;
+              position: relative;
+              align-items: center;
+              justify-content: center;
+              margin-bottom: 5px;
+              .starColor {
+                color: #000000;
+              }
+              .averageRatingNum {
+                margin-left: 5px;
+                font-family: "AdihausDIN",Helvetica,Arial,sans-serif;
+                font-weight: 700;
+              }
+            }
+            .ratingName {
+              text-transform: capitalize;
+            }
+          }
+        }
+        .divider {
+          margin-top: 15px;
+        }
+        .secondarySubRatings {
+          .secondarySubRatingsSize {
+            margin-top: 15px;
+            .comparisonBarTitle {
+              display: inline-flex;
+              text-align: left;
+              margin-bottom: 20px;
+              font-size: 14px;
+            }
+            .comparisonBarLabel {
+              margin-top: 10px;
+              display: flex;
+              justify-content: space-between;
+              .comparisonBarLabels {
+                font-size: 12px;
+                text-align: left;
+              }
+            }
+          }
+        }
+      }
+      .topicFilters {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 5px -5px;
+        .topicFilter {
+          margin: 5px;
+        }
+      }
+    }
+    .reviews {
+      width: calc((2 / 3) * 100% - 20px);
+      .filterOptions {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      .review {
+        margin-bottom: 20px;
+        .reviewTitle {
+          font-size: 14px;
+          line-height: 20px;
+          margin-bottom: 0 !important;
+          .title {
+            display: -webkit-box;
+            overflow: hidden;
+            word-break: break-word;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2
+          }
+        }
+        .stars {
+          .starColor {
+            color: #000000;
+            display: inline-flex;
+          }
+        }
+        .content {
+          display: -webkit-box;
+          overflow: hidden;
+          word-break: break-word;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          font-size: 14px;
+          line-height: 20px;
+        }
+        .voting {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          .likeBtn {
+            font-size: 12px;
+            margin-left: 12px;
+            display: flex;
+            align-items: center;
+          }
+        }
+        .infoContainer {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+
+.textStyle {
+  font-family: AdihausDIN;
+  font-size: 16px;
+  font-style: normal;
+  font-weight:700;
+  letter-spacing: 0;
+  line-height: 22px;
+}
