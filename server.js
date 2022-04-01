@@ -1,12 +1,10 @@
 const express = require('express')
 const path = require('path')
-const compression = require('compression');
 const app = express();
 const PORT = process.env.port || 8080;
 const https = require('https');
 const locale = process.env.locale || 'cn';
 const fs = require('fs');
-app.use(compression())
 app.use(express.static(path.join(__dirname, 'dist')));
 
 app.get('/*', function (req, res) {

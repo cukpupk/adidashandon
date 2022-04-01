@@ -13,9 +13,9 @@
     "@emotion/styled": "^11.8.1",
     "@mui/material": "^5.5.3",
     "antd": "^4.19.3",
+    "express": "^4.17.3",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-infinite-scroll-component": "^6.1.0"
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@types/react": "^17.0.33",

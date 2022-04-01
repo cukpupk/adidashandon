@@ -4,11 +4,9 @@ import React, {useEffect, useState, createElement} from "react";
 import {rattingAndViewData} from "./index.interface";
 import {Rating, Button, Select, MenuItem} from "@mui/material";
 import {DislikeOutlined, LikeOutlined, DislikeFilled, LikeFilled} from '@ant-design/icons';
-import InfiniteScroll from 'react-infinite-scroll-component';
 import Divider from "@mui/material/Divider";
 import LinearProgress from "@mui/material/LinearProgress";
 import './index.module.less'
-import CircularProgress from "@mui/material/CircularProgress";
 const RattingViews = () => {
     const [data, setData] = useState<Array<rattingAndViewData>>([])
     const [totalResults, setTotalResults] = useState<number>(0)
