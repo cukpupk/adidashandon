@@ -1201,7 +1201,7 @@
     slash "^3.0.0"
     strip-ansi "^6.0.0"
 
-"@jest/environment@^27.5.1":
+"@jest/environment@^27.4.6", "@jest/environment@^27.5.1":
   version "27.5.1"
   resolved "https://registry.npmmirror.com/@jest/environment/-/environment-27.5.1.tgz#d7425820511fe7158abbecc010140c3fd3be9c74"
   integrity sha512-/WQjhPJe3/ghaol/4Bq480JKXV/Rfw8nQdN7f41fM8VDHLcxKXou6QyXAh3EFr9/bVG3x74z1NWDkP87EiY8gA==
@@ -1211,7 +1211,7 @@
     "@types/node" "*"
     jest-mock "^27.5.1"
 
-"@jest/fake-timers@^27.5.1":
+"@jest/fake-timers@^27.4.6", "@jest/fake-timers@^27.5.1":
   version "27.5.1"
   resolved "https://registry.npmmirror.com/@jest/fake-timers/-/fake-timers-27.5.1.tgz#76979745ce0579c8a94a4678af7a748eda8ada74"
   integrity sha512-/aPowoolwa07k7/oM3aASneNeBGCmGQsc3ugN4u6s4C/+s5M64MFo/+djTdiwcbQlRfFElGuDXWzaWj6QgKObQ==
@@ -1313,7 +1313,7 @@
     source-map "^0.6.1"
     write-file-atomic "^3.0.0"
 
-"@jest/types@^27.5.1":
+"@jest/types@^27.4.2", "@jest/types@^27.5.1":
   version "27.5.1"
   resolved "https://registry.npmmirror.com/@jest/types/-/types-27.5.1.tgz#3c79ec4a8ba61c170bf937bcf9e98a9df175ec80"
   integrity sha512-Cx46iJ9QpwQTjIdq5VJu2QTMMs3QlEjI0x1QbBP5W1+nMzyc2XmimiRR/CbX9TO0cPTeUlxWMOu8mslYsJ8DEw==
@@ -1506,6 +1506,13 @@
   integrity sha512-K2waXdXBi2302XUdcHcR1jCeU0LL4TD9HRs/gk0N2Xvrht+G/BfJa4QObBQZfhMdxiCpV3COl5Nfq4uKTeTnJA==
   dependencies:
     "@babel/types" "^7.3.0"
+
+"@types/cheerio@^0.22.22":
+  version "0.22.31"
+  resolved "https://registry.npmmirror.com/@types/cheerio/-/cheerio-0.22.31.tgz#b8538100653d6bb1b08a1e46dec75b4f2a5d5eb6"
+  integrity sha512-Kt7Cdjjdi2XWSfrZ53v4Of0wG3ZcmaegFXjMmz9tfNrZSkzzo36G0AL1YqSdcIA78Etjt6E609pt5h1xnQkPUw==
+  dependencies:
+    "@types/node" "*"
 
 "@types/graceful-fs@^4.1.2":
   version "4.1.5"
@@ -2122,6 +2129,11 @@ ci-info@^3.2.0:
   resolved "https://registry.npmmirror.com/ci-info/-/ci-info-3.3.0.tgz#b4ed1fb6818dea4803a55c623041f9165d2066b2"
   integrity sha512-riT/3vI5YpVH6/qomlDnJow6TBee2PBKSEpx3O32EGPYbWGIRsIlGRms3Sm74wYE1JMo8RnO04Hb12+v1J5ICw==
 
+circular-json-es6@^2.0.1:
+  version "2.0.2"
+  resolved "https://registry.npmmirror.com/circular-json-es6/-/circular-json-es6-2.0.2.tgz#e4f4a093e49fb4b6aba1157365746112a78bd344"
+  integrity sha512-ODYONMMNb3p658Zv+Pp+/XPa5s6q7afhz3Tzyvo+VRh9WIrJ64J76ZC4GQxnlye/NesTn09jvOiuE8+xxfpwhQ==
+
 cjs-module-lexer@^1.0.0:
   version "1.2.2"
   resolved "https://registry.npmmirror.com/cjs-module-lexer/-/cjs-module-lexer-1.2.2.tgz#9f84ba3244a512f3a54e5277e8eef4c489864e40"
@@ -2381,6 +2393,13 @@ dedent@^0.7.0:
   resolved "https://registry.npmmirror.com/dedent/-/dedent-0.7.0.tgz#2495ddbaf6eb874abb0e1be9df22d2e5a544326c"
   integrity sha512-Q6fKUPqnAHAyhiUgFU7BUzLiv0kd8saH9al7tnu5Q/okj6dnupxyTgFIBjVzJATdfIAm9NAsvXNzjaKa+bxVyA==
 
+deep-equal-ident@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.npmmirror.com/deep-equal-ident/-/deep-equal-ident-1.1.1.tgz#06f4b89e53710cd6cea4a7781c7a956642de8dc9"
+  integrity sha512-aWv7VhTl/Lju1zenOD3E1w8PpUVrTDbwXCHtbSNr+p/uadr49Y1P1ld0W3Pl6gbvIbiRjoCVsqw70UupCNGh6g==
+  dependencies:
+    lodash.isequal "^3.0"
+
 deep-is@~0.1.3:
   version "0.1.4"
   resolved "https://registry.npmmirror.com/deep-is/-/deep-is-0.1.4.tgz#a6f2dce612fadd2ef1f519b73551f17e85199831"
@@ -2546,6 +2565,14 @@ enzyme-adapter-utils@^1.14.0:
     prop-types "^15.7.2"
     semver "^5.7.1"
 
+enzyme-matchers@^7.1.2:
+  version "7.1.2"
+  resolved "https://registry.npmmirror.com/enzyme-matchers/-/enzyme-matchers-7.1.2.tgz#d80530a61f22d28bb993dd7588abba38bd4de282"
+  integrity sha512-03WqAg2XDl7id9rARIO97HQ1JIw9F2heJ3R4meGu/13hx0ULTDEgl0E67MGl2Uq1jq1DyRnJfto1/VSzskdV5A==
+  dependencies:
+    circular-json-es6 "^2.0.1"
+    deep-equal-ident "^1.1.1"
+
 enzyme-shallow-equal@^1.0.1, enzyme-shallow-equal@^1.0.4:
   version "1.0.4"
   resolved "https://registry.npmmirror.com/enzyme-shallow-equal/-/enzyme-shallow-equal-1.0.4.tgz#b9256cb25a5f430f9bfe073a84808c1d74fced2e"
@@ -2553,6 +2580,15 @@ enzyme-shallow-equal@^1.0.1, enzyme-shallow-equal@^1.0.4:
   dependencies:
     has "^1.0.3"
     object-is "^1.1.2"
+
+enzyme-to-json@^3.3.0:
+  version "3.6.2"
+  resolved "https://registry.npmmirror.com/enzyme-to-json/-/enzyme-to-json-3.6.2.tgz#94f85c413bcae8ab67be53b0a94b69a560e27823"
+  integrity sha512-Ynm6Z6R6iwQ0g2g1YToz6DWhxVnt8Dy1ijR2zynRKxTyBGA8rCDXU3rs2Qc4OKvUvc2Qoe1bcFK6bnPs20TrTg==
+  dependencies:
+    "@types/cheerio" "^0.22.22"
+    lodash "^4.17.21"
+    react-is "^16.12.0"
 
 enzyme@^3.11.0:
   version "3.11.0"
@@ -3550,17 +3586,24 @@ jest-each@^27.5.1:
     jest-util "^27.5.1"
     pretty-format "^27.5.1"
 
-jest-environment-jsdom@^27.5.1:
-  version "27.5.1"
-  resolved "https://registry.npmmirror.com/jest-environment-jsdom/-/jest-environment-jsdom-27.5.1.tgz#ea9ccd1fc610209655a77898f86b2b559516a546"
-  integrity sha512-TFBvkTC1Hnnnrka/fUb56atfDtJ9VMZ94JkjTbggl1PEpwrYtUBKMezB3inLmWqQsXYLcMwNoDQwoBTAvFfsfw==
+jest-environment-enzyme@^7.1.2:
+  version "7.1.2"
+  resolved "https://registry.npmmirror.com/jest-environment-enzyme/-/jest-environment-enzyme-7.1.2.tgz#4561f26a719e8e87ce8c9a6d3f540a92663ba8d5"
+  integrity sha512-3tfaYAzO7qZSRrv+srQnfK16Vu5XwH/pHi8FpoqSHjKKngbHzXf7aBCBuWh8y3w0OtknHRfDMFrC60Khj+g1hA==
   dependencies:
-    "@jest/environment" "^27.5.1"
-    "@jest/fake-timers" "^27.5.1"
-    "@jest/types" "^27.5.1"
+    jest-environment-jsdom "^24.0.0"
+
+jest-environment-jsdom@27.4.6, jest-environment-jsdom@^24.0.0, jest-environment-jsdom@^27.5.1:
+  version "27.4.6"
+  resolved "https://registry.npmmirror.com/jest-environment-jsdom/-/jest-environment-jsdom-27.4.6.tgz#c23a394eb445b33621dfae9c09e4c8021dea7b36"
+  integrity sha512-o3dx5p/kHPbUlRvSNjypEcEtgs6LmvESMzgRFQE6c+Prwl2JLA4RZ7qAnxc5VM8kutsGRTB15jXeeSbJsKN9iA==
+  dependencies:
+    "@jest/environment" "^27.4.6"
+    "@jest/fake-timers" "^27.4.6"
+    "@jest/types" "^27.4.2"
     "@types/node" "*"
-    jest-mock "^27.5.1"
-    jest-util "^27.5.1"
+    jest-mock "^27.4.6"
+    jest-util "^27.4.2"
     jsdom "^16.6.0"
 
 jest-environment-node@^27.5.1:
@@ -3574,6 +3617,15 @@ jest-environment-node@^27.5.1:
     "@types/node" "*"
     jest-mock "^27.5.1"
     jest-util "^27.5.1"
+
+jest-enzyme@^7.1.2:
+  version "7.1.2"
+  resolved "https://registry.npmmirror.com/jest-enzyme/-/jest-enzyme-7.1.2.tgz#91a10b2d3be1b56c0d65b34286e5bdc41ab4ba3d"
+  integrity sha512-j+jkph3t5hGBS12eOldpfsnERYRCHi4c/0KWPMnqRPoJJXvCpLIc5th1MHl0xDznQDXVU0AHUXg3rqMrf8vGpA==
+  dependencies:
+    enzyme-matchers "^7.1.2"
+    enzyme-to-json "^3.3.0"
+    jest-environment-enzyme "^7.1.2"
 
 jest-get-type@^27.5.1:
   version "27.5.1"
@@ -3656,7 +3708,7 @@ jest-message-util@^27.5.1:
     slash "^3.0.0"
     stack-utils "^2.0.3"
 
-jest-mock@^27.5.1:
+jest-mock@^27.4.6, jest-mock@^27.5.1:
   version "27.5.1"
   resolved "https://registry.npmmirror.com/jest-mock/-/jest-mock-27.5.1.tgz#19948336d49ef4d9c52021d34ac7b5f36ff967d6"
   integrity sha512-K4jKbY1d4ENhbrG2zuPWaQBvDly+iZ2yAW+T1fATN78hc0sInwn7wZB8XtlNnvHug5RMwV897Xm4LqmPM4e2Og==
@@ -3790,7 +3842,7 @@ jest-snapshot@^27.5.1:
     pretty-format "^27.5.1"
     semver "^7.3.2"
 
-jest-util@^27.0.0, jest-util@^27.5.1:
+jest-util@^27.0.0, jest-util@^27.4.2, jest-util@^27.5.1:
   version "27.5.1"
   resolved "https://registry.npmmirror.com/jest-util/-/jest-util-27.5.1.tgz#3ba9771e8e31a0b85da48fe0b0891fb86c01c2f9"
   integrity sha512-Kv2o/8jNvX1MQ0KGtw480E/w4fBCDOnH6+6DmeKi6LZUIlKA5kwY0YNdlzaWTiVgxqAqik11QyxDOKk543aKXw==
@@ -3965,6 +4017,25 @@ locate-path@^5.0.0:
   dependencies:
     p-locate "^4.1.0"
 
+lodash._baseisequal@^3.0.0:
+  version "3.0.7"
+  resolved "https://registry.npmmirror.com/lodash._baseisequal/-/lodash._baseisequal-3.0.7.tgz#d8025f76339d29342767dcc887ce5cb95a5b51f1"
+  integrity sha512-U+3GsNEZj9ebI03ncLC2pLmYVjgtYZEwdkAPO7UGgtGvAz36JVFPAQUufpSaVL93Cz5arc6JGRKZRhaOhyVJYA==
+  dependencies:
+    lodash.isarray "^3.0.0"
+    lodash.istypedarray "^3.0.0"
+    lodash.keys "^3.0.0"
+
+lodash._bindcallback@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.npmmirror.com/lodash._bindcallback/-/lodash._bindcallback-3.0.1.tgz#e531c27644cf8b57a99e17ed95b35c748789392e"
+  integrity sha512-2wlI0JRAGX8WEf4Gm1p/mv/SZ+jLijpj0jyaE/AXeuQphzCgD8ZQW4oSpoN8JAopujOFGU3KMuq7qfHBWlGpjQ==
+
+lodash._getnative@^3.0.0:
+  version "3.9.1"
+  resolved "https://registry.npmmirror.com/lodash._getnative/-/lodash._getnative-3.9.1.tgz#570bc7dede46d61cdcde687d65d3eecbaa3aaff5"
+  integrity sha512-RrL9VxMEPyDMHOd9uFbvMe8X55X16/cGM5IgOKgRElQZutpX89iS6vwl64duTV1/16w5JY7tuFNXqoekmh1EmA==
+
 lodash.debounce@^4.0.8:
   version "4.0.8"
   resolved "https://registry.npmmirror.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
@@ -3980,10 +4051,42 @@ lodash.flattendeep@^4.4.0:
   resolved "https://registry.npmmirror.com/lodash.flattendeep/-/lodash.flattendeep-4.4.0.tgz#fb030917f86a3134e5bc9bec0d69e0013ddfedb2"
   integrity sha512-uHaJFihxmJcEX3kT4I23ABqKKalJ/zDrDg0lsFtc1h+3uw49SIJ5beyhx5ExVRti3AvKoOJngIj7xz3oylPdWQ==
 
+lodash.isarguments@^3.0.0:
+  version "3.1.0"
+  resolved "https://registry.npmmirror.com/lodash.isarguments/-/lodash.isarguments-3.1.0.tgz#2f573d85c6a24289ff00663b491c1d338ff3458a"
+  integrity sha512-chi4NHZlZqZD18a0imDHnZPrDeBbTtVN7GXMwuGdRH9qotxAjYs3aVLKc7zNOG9eddR5Ksd8rvFEBc9SsggPpg==
+
+lodash.isarray@^3.0.0:
+  version "3.0.4"
+  resolved "https://registry.npmmirror.com/lodash.isarray/-/lodash.isarray-3.0.4.tgz#79e4eb88c36a8122af86f844aa9bcd851b5fbb55"
+  integrity sha512-JwObCrNJuT0Nnbuecmqr5DgtuBppuCvGD9lxjFpAzwnVtdGoDQ1zig+5W8k5/6Gcn0gZ3936HDAlGd28i7sOGQ==
+
+lodash.isequal@^3.0:
+  version "3.0.4"
+  resolved "https://registry.npmmirror.com/lodash.isequal/-/lodash.isequal-3.0.4.tgz#1c35eb3b6ef0cd1ff51743e3ea3cf7fdffdacb64"
+  integrity sha512-Bsu5fP9Omd+HBk2Dz8qp4BHbC+83DBykZ87Lz1JmPKTVNy4Q0XQVtUrbfXVAK/udQrWNcGStcKSA9yj/Zkm3TQ==
+  dependencies:
+    lodash._baseisequal "^3.0.0"
+    lodash._bindcallback "^3.0.0"
+
 lodash.isequal@^4.5.0:
   version "4.5.0"
   resolved "https://registry.npmmirror.com/lodash.isequal/-/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
   integrity sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==
+
+lodash.istypedarray@^3.0.0:
+  version "3.0.6"
+  resolved "https://registry.npmmirror.com/lodash.istypedarray/-/lodash.istypedarray-3.0.6.tgz#c9a477498607501d8e8494d283b87c39281cef62"
+  integrity sha512-lGWJ6N8AA3KSv+ZZxlTdn4f6A7kMfpJboeyvbFdE7IU9YAgweODqmOgdUHOA+c6lVWeVLysdaxciFXi+foVsWw==
+
+lodash.keys@^3.0.0:
+  version "3.1.2"
+  resolved "https://registry.npmmirror.com/lodash.keys/-/lodash.keys-3.1.2.tgz#4dbc0472b156be50a0b286855d1bd0b0c656098a"
+  integrity sha512-CuBsapFjcubOGMn3VD+24HOAPxM79tH+V6ivJL3CHYjtrawauDJHUk//Yew9Hvc6e9rbCrURGk8z6PC+8WJBfQ==
+  dependencies:
+    lodash._getnative "^3.0.0"
+    lodash.isarguments "^3.0.0"
+    lodash.isarray "^3.0.0"
 
 lodash.memoize@4.x:
   version "4.1.2"
